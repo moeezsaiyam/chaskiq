@@ -9,19 +9,19 @@ default: &default
   pool: 5
   timeout: 5000
 
-development:
-  prepared_statements: false
-  adapter: postgresql
-  database: postgres
-  min_messages: warning
-  pool: 15
-  timeout: 5000
-  host_names:
-    ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
-    ### If you change this setting you will need to
-    ###   - restart sidekiq if you change this setting
-    ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
-    - "localhost"
+# development:
+#   prepared_statements: false
+#   adapter: postgresql
+#   database: postgres
+#   min_messages: warning
+#   pool: 15
+#   timeout: 5000
+#   host_names:
+#     ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
+#     ### If you change this setting you will need to
+#     ###   - restart sidekiq if you change this setting
+#     ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
+#     - "localhost"
 
 
 # Warning: The database defined as "test" will be erased and
@@ -41,16 +41,27 @@ test:
     ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
     - "localhost"
 
-production: 
-  prepared_statements: false
+# production:
+#   prepared_statements: false
+#   adapter: postgresql
+#   database: hermes
+#   min_messages: warning
+#   pool: 5
+#   timeout: 5000
+#   host_names:
+#     ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
+#     ### If you change this setting you will need to
+#     ###   - restart sidekiq if you change this setting
+#     ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
+#     - "localhost"
+development:
   adapter: postgresql
-  database: hermes
-  min_messages: warning
-  pool: 5
-  timeout: 5000
-  host_names:
-    ### Don't include the port number here. Change the "port" site setting instead, at /admin/site_settings.
-    ### If you change this setting you will need to
-    ###   - restart sidekiq if you change this setting
-    ###   - rebake all to posts using: `RAILS_ENV=production bundle exec rake posts:rebake`
-    - "localhost"
+  host: localhost
+  username: user
+  database: app-dev
+
+production:
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
