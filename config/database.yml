@@ -56,16 +56,20 @@ test:
 #     - "localhost"
 development:
   adapter: postgresql
-  host: ec2-52-202-146-43.compute-1.amazonaws.com
+  encoding: utf8
   database: d3semdu7eqmmdo
   username: mnhmzcmjxvzjtu
-  port: 5432
   password: eca04894dabcfa417282891a7ac947120692716cf360b6fcd01e10f0373246f4
+  host: ec2-52-202-146-43.compute-1.amazonaws.com
+  port: 5432
+  sslmode: require
 
 production:
   adapter: postgresql
-  host: ec2-52-202-146-43.compute-1.amazonaws.com
+  encoding: utf8
   database: d3semdu7eqmmdo
   username: mnhmzcmjxvzjtu
-  port: 5432
   password: eca04894dabcfa417282891a7ac947120692716cf360b6fcd01e10f0373246f4
+  host: ec2-52-202-146-43.compute-1.amazonaws.com
+  port: 5432
+  sslmode: require
