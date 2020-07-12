@@ -57,19 +57,19 @@ test:
 development:
   adapter: postgresql
   encoding: utf8
-  database: d64a0pn16hui66
-  username: djznkrcwmldimd
-  password: 76a82e66baafc2bc4f51cf0cc26387c5a169f301bff5ab721485b3ab4e0692b0
-  host: ec2-34-239-241-25.compute-1.amazonaws.com
+  database: de6iacfh5ucpp3
+  username: ervcepceetmoqk
+  password: 4204ef04068d642592f9c33c1d874762c7ebdc6d80019d5af3d952d31745cbb7
+  host: ec2-50-19-26-235.compute-1.amazonaws.com
   port: 5432
   sslmode: require
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: d64a0pn16hui66
-  username: djznkrcwmldimd
-  password: 76a82e66baafc2bc4f51cf0cc26387c5a169f301bff5ab721485b3ab4e0692b0
-  host: ec2-34-239-241-25.compute-1.amazonaws.com
+  database: de6iacfh5ucpp3
+  username: ervcepceetmoqk
+  password: 4204ef04068d642592f9c33c1d874762c7ebdc6d80019d5af3d952d31745cbb7
+  host: ec2-50-19-26-235.compute-1.amazonaws.com
   port: 5432
   sslmode: require
