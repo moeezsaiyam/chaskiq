@@ -33,7 +33,7 @@
     },
     "HOST": {
       "description": "App's internet entry point ie:. https://domain.com",
-      "value": ""
+      "value": "https://chasiq-test.herokuapp.com/"
     },
     "WS": {
       "description": "App's websocket server, wss:://domain.com/cable",
