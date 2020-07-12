@@ -1,4 +1,6 @@
 #!/bin/bash
+ANYCABLE_REDIS_URL=$REDIS_URL
+REDIS=$REDIS_URL ADDR="0.0.0.0:$PORT"
 
 if [ "$ANYCABLE_DEPLOYMENT" == "true" ]; then
   bundle exec anycable --server-command="anycable-go"
