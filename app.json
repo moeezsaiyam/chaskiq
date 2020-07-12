@@ -41,7 +41,7 @@
     },
     "ASSET_HOST": {
       "description": "App assets's internet entry point ie:. https://domain.com/",
-      "value": ""
+      "value": "https://chasiq-test.herokuapp.com/"
     },
     "SNS_CONFIGURATION_SET": {
       "description": "Amazon's SNS configuration set (for incoming email processing)",
