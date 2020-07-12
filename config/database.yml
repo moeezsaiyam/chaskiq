@@ -62,7 +62,6 @@ development:
   password: 4204ef04068d642592f9c33c1d874762c7ebdc6d80019d5af3d952d31745cbb7
   host: ec2-50-19-26-235.compute-1.amazonaws.com
   port: 5432
-  sslmode: require
 
 production:
   adapter: postgresql
@@ -72,4 +71,3 @@ production:
   password: 4204ef04068d642592f9c33c1d874762c7ebdc6d80019d5af3d952d31745cbb7
   host: ec2-50-19-26-235.compute-1.amazonaws.com
   port: 5432
-  sslmode: require
