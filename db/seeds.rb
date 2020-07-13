@@ -15,11 +15,10 @@ app = App.create(
    name: 'test app',
    domain_url: domain
 )
-app.save
-app.add_admin(Agent.create(
-                email: 'moeezsaiyam@gmail.com',
-                password: '1234567'
-              ))
+agent = Agent.create(
+  email: 'moeezsaiyam@gmail.com',
+  password: '1234567'
+)
 
 Doorkeeper::Application.create(
    name: "authapp",
