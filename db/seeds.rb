@@ -15,7 +15,10 @@ app = App.create(
    name: 'test app',
    domain_url: domain
 )
+<<<<<<< HEAD
 app.save
+=======
+>>>>>>> 57c97542b45c26834e9f1b683922d8facbaa1e23
 app.add_admin(Agent.create(
                 email: 'moeezsaiyam@gmail.com',
                 password: '1234567'
