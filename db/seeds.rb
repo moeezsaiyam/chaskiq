@@ -15,16 +15,14 @@ app = App.create(
    name: 'test app',
    domain_url: domain
 )
+app.add_admin(Agent.create(
+                email: 'moeezsaiyam@gmail.com',
+                password: '1234567'
+              ))
 
 Doorkeeper::Application.create(
    name: "authapp",
    #redirect_uri: "#{domain}/callback"
 )
-
-app = App.first
-app.add_admin(Agent.create(
-                email: 'moeezsaiyam@gmail.com',
-                password: '1234567'
-              ))
 
 AppPackagesCatalog.import unless Rails.env.test?
