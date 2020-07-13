@@ -12,13 +12,19 @@ require 'app_packages_catalog'
 domain = ENV['HOST'] || 'http://localhost:3000'
 
 app = App.create(
-   name: 'test app', 
+   name: 'test app',
    domain_url: domain
 )
 
 Doorkeeper::Application.create(
-   name: "authapp", 
+   name: "authapp",
    #redirect_uri: "#{domain}/callback"
 )
+
+app = App.first
+app.add_admin(Agent.create(
+                email: 'moeezsaiyam@gmail.com',
+                password: '1234567'
+              ))
 
 AppPackagesCatalog.import unless Rails.env.test?
